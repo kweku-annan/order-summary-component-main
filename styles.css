@@ -1,0 +1,114 @@
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    font-family: "Red Hat Display", sans-serif;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+#order-card {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#main {
+    width: 430px;
+    background-color: white;
+    margin: 30px auto 30px auto;
+    border-radius: 5%;
+}
+
+#main>img {
+    border-radius: 5% 5% 0 0;
+}
+
+#main>section>header>h1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+/* Font-weight is not having effect on the paragraph. I wish I can make it smaller*/
+#main>section>article>p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+#plan {
+    background-color: hsl(225, 100%, 98%);
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+#plan>h3,p,button {
+    position: relative;
+    display: inline-block;
+}
+
+#plan>img {
+    float: left;
+    padding: 10px 15px 5px 15px;
+    
+}
+
+#plan>h3 {
+    bottom: 9px;
+}
+
+/*
+Padding was not working with it. I it a padding top and I was expecting it to effect between it and
+the h3 tag but it affected the top of the h3 tag.
+*/
+#plan>p {
+    right: 107px;
+    top: 13px;
+}
+
+#plan>button {
+    color: hsl(245, 75%, 52%);
+    right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    font-weight: 900;
+}
+
+
+#payment {
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.proceed {
+    display: block;
+    width: 338px;
+    border: none;
+    background: none;
+    background-color: hsl(245, 75%, 52%);
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: -4px 10px 7px rgba(10, 10, 10, 0.185);
+}
+
+.cancel {
+    margin: 10px 0 30px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.proceed:active {
+    background-color: hsl(224, 23%, 55%);
+}
+
+#plan>button:active {
+    color: hsl(224, 23%, 55%);
+}
